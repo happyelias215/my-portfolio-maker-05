@@ -1,4 +1,15 @@
 import { createFileRoute } from "@tanstack/react-router";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import addcodeSaasImg from "@/assets/project-addcode-saas.jpg.asset.json";
+import addcodeAiImg from "@/assets/project-addcode-ai.jpg.asset.json";
+import infoSupportMicroservicesImg from "@/assets/project-infosupport-microservices.jpg.asset.json";
+import infoSupportEventsImg from "@/assets/project-infosupport-events.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
