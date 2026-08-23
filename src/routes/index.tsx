@@ -277,8 +277,8 @@ function Index() {
               Terraform and CI/CD so releases stay fast and predictable.
             </p>
             <p className="text-foreground">
-              English — Advanced / fully working proficiency (C1). Based between Romania and
-              Hungary, working with distributed teams across Europe and the US.
+              English — Advanced / fully working proficiency (C1). Based in Bucharest, Romania,
+              working with distributed teams across Europe and the US.
             </p>
           </div>
         </div>
