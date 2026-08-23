@@ -45,41 +45,40 @@
   --color-chart-3: var(--chart-3);
   --color-chart-4: var(--chart-4);
   --color-chart-5: var(--chart-5);
-  --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
-  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
-  --font-mono: "JetBrains Mono", ui-monospace, monospace;
-  --shadow-glow: 0 0 0 1px var(--border), 0 24px 60px -30px oklch(0.72 0.15 55 / 0.35);
-  --shadow-card: 0 1px 0 0 oklch(1 0 0 / 0.04) inset, 0 20px 40px -32px oklch(0 0 0 / 0.9);
+  --font-display: "Libre Baskerville", ui-serif, Georgia, serif;
+  --font-sans: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+  --shadow-card: 0 1px 2px 0 oklch(0.2 0.01 60 / 0.04), 0 12px 32px -24px oklch(0.2 0.01 60 / 0.18);
 }
 
 :root {
-  --radius: 0.5rem;
-  --background: oklch(0.16 0.008 60);
-  --foreground: oklch(0.95 0.006 80);
-  --card: oklch(0.2 0.009 60);
-  --card-foreground: oklch(0.95 0.006 80);
-  --surface: oklch(0.19 0.009 60);
-  --surface-raised: oklch(0.23 0.011 60);
-  --popover: oklch(0.2 0.009 60);
-  --popover-foreground: oklch(0.95 0.006 80);
-  --primary: oklch(0.74 0.15 58);
-  --primary-foreground: oklch(0.18 0.02 60);
-  --secondary: oklch(0.26 0.011 60);
-  --secondary-foreground: oklch(0.93 0.006 80);
-  --muted: oklch(0.24 0.01 60);
-  --muted-foreground: oklch(0.68 0.012 70);
-  --accent: oklch(0.72 0.09 180);
-  --accent-foreground: oklch(0.17 0.02 60);
-  --destructive: oklch(0.6 0.21 25);
-  --destructive-foreground: oklch(0.97 0.005 80);
-  --border: oklch(0.3 0.012 60);
-  --input: oklch(0.3 0.012 60);
-  --ring: oklch(0.74 0.15 58);
-  --chart-1: oklch(0.74 0.15 58);
-  --chart-2: oklch(0.72 0.09 180);
-  --chart-3: oklch(0.62 0.11 250);
-  --chart-4: oklch(0.8 0.13 90);
-  --chart-5: oklch(0.66 0.14 20);
+  --radius: 0.25rem;
+  --background: oklch(0.968 0.006 85);
+  --foreground: oklch(0.16 0.003 60);
+  --card: oklch(0.985 0.004 85);
+  --card-foreground: oklch(0.16 0.003 60);
+  --surface: oklch(0.985 0.004 85);
+  --surface-raised: oklch(0.94 0.007 85);
+  --popover: oklch(0.985 0.004 85);
+  --popover-foreground: oklch(0.16 0.003 60);
+  --primary: oklch(0.16 0.003 60);
+  --primary-foreground: oklch(0.978 0.005 85);
+  --secondary: oklch(0.925 0.008 85);
+  --secondary-foreground: oklch(0.2 0.004 60);
+  --muted: oklch(0.93 0.007 85);
+  --muted-foreground: oklch(0.44 0.006 65);
+  --accent: oklch(0.925 0.008 85);
+  --accent-foreground: oklch(0.2 0.004 60);
+  --destructive: oklch(0.52 0.19 26);
+  --destructive-foreground: oklch(0.98 0.004 85);
+  --border: oklch(0.86 0.008 85);
+  --input: oklch(0.86 0.008 85);
+  --ring: oklch(0.3 0.005 60);
+  --chart-1: oklch(0.16 0.003 60);
+  --chart-2: oklch(0.44 0.006 65);
+  --chart-3: oklch(0.6 0.008 70);
+  --chart-4: oklch(0.72 0.008 80);
+  --chart-5: oklch(0.86 0.008 85);
 }
 
 @layer base {
@@ -98,30 +97,25 @@
   h2,
   h3 {
     font-family: var(--font-display);
-    letter-spacing: -0.02em;
+    letter-spacing: -0.01em;
+    font-weight: 700;
   }
 
   ::selection {
-    background: oklch(0.74 0.15 58 / 0.3);
+    background: oklch(0.86 0.008 85);
   }
 }
 
 @utility label-mono {
   font-family: var(--font-mono);
   font-size: 0.7rem;
-  letter-spacing: 0.22em;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--color-muted-foreground);
 }
 
-@utility text-gradient {
-  background-image: linear-gradient(
-    100deg,
-    var(--color-foreground) 10%,
-    var(--color-primary) 90%
-  );
-  background-clip: text;
-  color: transparent;
+@utility rule-top {
+  border-top: 1px solid var(--color-foreground);
 }
 
 @utility panel {
@@ -133,7 +127,7 @@
 
 @utility grid-lines {
   background-image:
-    linear-gradient(to right, oklch(1 0 0 / 0.035) 1px, transparent 1px),
-    linear-gradient(to bottom, oklch(1 0 0 / 0.035) 1px, transparent 1px);
+    linear-gradient(to right, oklch(0.16 0.003 60 / 0.045) 1px, transparent 1px),
+    linear-gradient(to bottom, oklch(0.16 0.003 60 / 0.045) 1px, transparent 1px);
   background-size: 72px 72px;
 }
