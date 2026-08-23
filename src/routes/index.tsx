@@ -391,11 +391,11 @@ function Index() {
               <p className="mt-2 text-sm">happyelias215@gmail.com</p>
             </a>
             <a
-              href="tel:+3619011020"
+              href="tel:+40770123456"
               className="bg-surface px-6 py-6 transition-colors hover:bg-surface-raised"
             >
               <p className="label-mono">Phone</p>
-              <p className="mt-2 text-sm">+36 1 901 1020</p>
+              <p className="mt-2 text-sm">+40 770 123 456</p>
             </a>
             <div className="bg-surface px-6 py-6">
               <p className="label-mono">Location</p>
