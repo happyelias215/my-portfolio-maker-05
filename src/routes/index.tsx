@@ -215,7 +215,7 @@ function Index() {
       {/* Hero */}
       <section id="top" className="relative overflow-hidden border-b border-border">
         <div className="relative mx-auto max-w-6xl px-6 py-24 md:py-32">
-          <p className="label-mono">Romania · Hungary — available remote</p>
+          <p className="label-mono">Bucharest, Romania — available remote</p>
           <h1 className="mt-6 max-w-4xl text-4xl leading-[1.15] md:text-6xl">
             Senior Full Stack Engineer
             <span className="mt-3 block text-muted-foreground italic">
