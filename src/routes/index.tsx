@@ -10,6 +10,10 @@ import addcodeSaasImg from "@/assets/project-addcode-saas.jpg.asset.json";
 import addcodeAiImg from "@/assets/project-addcode-ai.jpg.asset.json";
 import infoSupportMicroservicesImg from "@/assets/project-infosupport-microservices.jpg.asset.json";
 import infoSupportEventsImg from "@/assets/project-infosupport-events.jpg.asset.json";
+import addcode1 from "@/assets/addcode1.png";
+import addcode2 from "@/assets/addcode2.png";
+import infosupport1 from "@/assets/infosupport1.png";
+import infosupport2 from "@/assets/infosupport2.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -194,7 +198,7 @@ const projects = [
     title: "Cloud-Native SaaS Platform",
     company: "Addcode",
     location: "Dortmund, Germany",
-    image: addcodeSaasImg.url,
+    image: addcode1,
     description:
       "End-to-end design and delivery of a scalable SaaS platform serving high-traffic workloads with React, Next.js and NestJS.",
     stack: ["React", "Next.js", "NestJS", "PostgreSQL", "AWS", "Terraform"],
@@ -203,7 +207,7 @@ const projects = [
     title: "AI-Powered Mobile Assistant",
     company: "Addcode",
     location: "Dortmund, Germany",
-    image: addcodeAiImg.url,
+    image: addcode2,
     description:
       "React Native app integrating LLM APIs and RAG pipelines to deliver intelligent, context-aware assistance to users.",
     stack: ["React Native", "LLM APIs", "RAG", "Node.js", "Azure"],
@@ -212,7 +216,7 @@ const projects = [
     title: "Enterprise Microservices Architecture",
     company: "Info Support International Group B.V.",
     location: "Veenendaal, Netherlands",
-    image: infoSupportMicroservicesImg.url,
+    image: infosupport1,
     description:
       "Microservices-based platform with service-to-service communication over RabbitMQ and Kafka for complex enterprise workflows.",
     stack: ["React", "Angular", "Node.js", "RabbitMQ", "Kafka", "Jenkins"],
@@ -221,7 +225,7 @@ const projects = [
     title: "Event-Driven Workflow Platform",
     company: "Info Support International Group B.V.",
     location: "Veenendaal, Netherlands",
-    image: infoSupportEventsImg.url,
+    image: infosupport2,
     description:
       "Real-time data pipeline and workflow orchestration system connecting distributed services across event streams.",
     stack: ["Python", "Node.js", "PostgreSQL", "MongoDB", "CI/CD"],
@@ -270,7 +274,6 @@ function Index() {
           <h1 className="mt-6 max-w-4xl text-4xl leading-[1.15] md:text-6xl">
             Senior Full Stack Engineer
           </h1>
-          <div className="mt-8 h-px w-24 bg-foreground" aria-hidden="true" />
           <div className="mt-10 flex flex-wrap items-center gap-3">
             <a
               href="mailto:happyelias215@gmail.com"
