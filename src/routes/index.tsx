@@ -239,6 +239,7 @@ function Index() {
           </a>
           <nav className="hidden items-center gap-8 md:flex">
             {[
+              ["Projects", "#projects"],
               ["About", "#about"],
               ["Skills", "#skills"],
               ["Experience", "#experience"],
