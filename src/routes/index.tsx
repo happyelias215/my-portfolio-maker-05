@@ -399,7 +399,7 @@ function Index() {
             </a>
             <div className="bg-surface px-6 py-6">
               <p className="label-mono">Location</p>
-              <p className="mt-2 text-sm">Romania · Hungary</p>
+              <p className="mt-2 text-sm">Bucharest, Romania</p>
             </div>
           </div>
           <p className="mt-16 font-mono text-xs text-muted-foreground">
