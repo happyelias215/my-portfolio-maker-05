@@ -189,6 +189,45 @@ const stats = [
   { value: "24/7", label: "High-availability systems" },
 ];
 
+const projects = [
+  {
+    title: "Cloud-Native SaaS Platform",
+    company: "Addcode",
+    location: "Dortmund, Germany",
+    image: addcodeSaasImg.url,
+    description:
+      "End-to-end design and delivery of a scalable SaaS platform serving high-traffic workloads with React, Next.js and NestJS.",
+    stack: ["React", "Next.js", "NestJS", "PostgreSQL", "AWS", "Terraform"],
+  },
+  {
+    title: "AI-Powered Mobile Assistant",
+    company: "Addcode",
+    location: "Dortmund, Germany",
+    image: addcodeAiImg.url,
+    description:
+      "React Native app integrating LLM APIs and RAG pipelines to deliver intelligent, context-aware assistance to users.",
+    stack: ["React Native", "LLM APIs", "RAG", "Node.js", "Azure"],
+  },
+  {
+    title: "Enterprise Microservices Architecture",
+    company: "Info Support International Group B.V.",
+    location: "Veenendaal, Netherlands",
+    image: infoSupportMicroservicesImg.url,
+    description:
+      "Microservices-based platform with service-to-service communication over RabbitMQ and Kafka for complex enterprise workflows.",
+    stack: ["React", "Angular", "Node.js", "RabbitMQ", "Kafka", "Jenkins"],
+  },
+  {
+    title: "Event-Driven Workflow Platform",
+    company: "Info Support International Group B.V.",
+    location: "Veenendaal, Netherlands",
+    image: infoSupportEventsImg.url,
+    description:
+      "Real-time data pipeline and workflow orchestration system connecting distributed services across event streams.",
+    stack: ["Python", "Node.js", "PostgreSQL", "MongoDB", "CI/CD"],
+  },
+];
+
 function Index() {
   return (
     <div className="min-h-screen bg-background">
