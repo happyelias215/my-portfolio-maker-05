@@ -1,4 +1,15 @@
 import { createFileRoute } from "@tanstack/react-router";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import addcodeSaasImg from "@/assets/project-addcode-saas.jpg.asset.json";
+import addcodeAiImg from "@/assets/project-addcode-ai.jpg.asset.json";
+import infoSupportMicroservicesImg from "@/assets/project-infosupport-microservices.jpg.asset.json";
+import infoSupportEventsImg from "@/assets/project-infosupport-events.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -178,6 +189,45 @@ const stats = [
   { value: "24/7", label: "High-availability systems" },
 ];
 
+const projects = [
+  {
+    title: "Cloud-Native SaaS Platform",
+    company: "Addcode",
+    location: "Dortmund, Germany",
+    image: addcodeSaasImg.url,
+    description:
+      "End-to-end design and delivery of a scalable SaaS platform serving high-traffic workloads with React, Next.js and NestJS.",
+    stack: ["React", "Next.js", "NestJS", "PostgreSQL", "AWS", "Terraform"],
+  },
+  {
+    title: "AI-Powered Mobile Assistant",
+    company: "Addcode",
+    location: "Dortmund, Germany",
+    image: addcodeAiImg.url,
+    description:
+      "React Native app integrating LLM APIs and RAG pipelines to deliver intelligent, context-aware assistance to users.",
+    stack: ["React Native", "LLM APIs", "RAG", "Node.js", "Azure"],
+  },
+  {
+    title: "Enterprise Microservices Architecture",
+    company: "Info Support International Group B.V.",
+    location: "Veenendaal, Netherlands",
+    image: infoSupportMicroservicesImg.url,
+    description:
+      "Microservices-based platform with service-to-service communication over RabbitMQ and Kafka for complex enterprise workflows.",
+    stack: ["React", "Angular", "Node.js", "RabbitMQ", "Kafka", "Jenkins"],
+  },
+  {
+    title: "Event-Driven Workflow Platform",
+    company: "Info Support International Group B.V.",
+    location: "Veenendaal, Netherlands",
+    image: infoSupportEventsImg.url,
+    description:
+      "Real-time data pipeline and workflow orchestration system connecting distributed services across event streams.",
+    stack: ["Python", "Node.js", "PostgreSQL", "MongoDB", "CI/CD"],
+  },
+];
+
 function Index() {
   return (
     <div className="min-h-screen bg-background">
@@ -189,6 +239,7 @@ function Index() {
           </a>
           <nav className="hidden items-center gap-8 md:flex">
             {[
+              ["Projects", "#projects"],
               ["About", "#about"],
               ["Skills", "#skills"],
               ["Experience", "#experience"],
@@ -243,6 +294,61 @@ function Index() {
               </div>
             ))}
           </dl>
+        </div>
+      </section>
+
+      {/* Projects */}
+      <section id="projects" className="border-b border-border">
+        <div className="mx-auto max-w-6xl px-6 py-24">
+          <p className="label-mono">01 — Projects</p>
+          <h2 className="mt-4 text-3xl">Selected work</h2>
+          <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted-foreground">
+            Highlights from recent delivery at Addcode (Dortmund) and Info Support (Veenendaal).
+          </p>
+
+          <Carousel className="mt-14 w-full" opts={{ align: "start", loop: true }}>
+            <CarouselContent className="-ml-4">
+              {projects.map((project) => (
+                <CarouselItem key={project.title} className="pl-4 md:basis-1/2">
+                  <article className="panel group h-full overflow-hidden">
+                    <div className="aspect-[3/2] overflow-hidden bg-surface">
+                      <img
+                        src={project.image}
+                        alt={`${project.title} — ${project.company}`}
+                        loading="lazy"
+                        width={1200}
+                        height={800}
+                        className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      />
+                    </div>
+                    <div className="p-6">
+                      <p className="label-mono">
+                        {project.company} · {project.location}
+                      </p>
+                      <h3 className="mt-3 text-xl">{project.title}</h3>
+                      <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                        {project.description}
+                      </p>
+                      <ul className="mt-5 flex flex-wrap gap-2">
+                        {project.stack.map((tech) => (
+                          <li
+                            key={tech}
+                            className="rounded-sm border border-border bg-background px-2.5 py-1 font-mono text-xs text-muted-foreground"
+                          >
+                            {tech}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </article>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <div className="mt-8 flex items-center justify-end gap-2">
+              <CarouselPrevious className="static translate-x-0 translate-y-0" />
+              <CarouselNext className="static translate-x-0 translate-y-0" />
+            </div>
+          </Carousel>
         </div>
       </section>
 
