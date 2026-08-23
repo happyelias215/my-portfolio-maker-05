@@ -237,10 +237,10 @@ function Index() {
               happyelias215@gmail.com
             </a>
             <a
-              href="tel:+3619011020"
+              href="tel:+40770123456"
               className="rounded-sm border border-foreground/25 bg-surface px-6 py-3 font-mono text-xs uppercase tracking-widest text-foreground transition-colors hover:bg-surface-raised"
             >
-              +36 1 901 1020
+              +40 770 123 456
             </a>
           </div>
 
