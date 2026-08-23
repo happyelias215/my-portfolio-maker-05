@@ -1,4 +1,9 @@
-name: Deploy Vite Portfolio to GitHub Pages
+name: Build project
+
+run: | 
+    npm run build
+    echo "=== Build output ==="
+    find . -maxdepth 3 -type d | sort
 
 on:
   push:
