@@ -77,11 +77,19 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Elias Alam — Senior Full Stack Engineer" },
+      {
+        name: "description",
+        content:
+          "Portfolio of Elias Alam, senior full stack engineer building scalable cloud-native and AI-powered products.",
+      },
+      { name: "author", content: "Elias Alam" },
+      { property: "og:title", content: "Elias Alam — Senior Full Stack Engineer" },
+      {
+        property: "og:description",
+        content:
+          "Portfolio of Elias Alam, senior full stack engineer building scalable cloud-native and AI-powered products.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:site", content: "@Lovable" },
