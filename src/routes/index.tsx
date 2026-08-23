@@ -173,7 +173,7 @@ const experience = [
 
 const stats = [
   { value: "10+", label: "Years shipping" },
-  { value: "3", label: "Countries / remote teams" },
+  { value: "2+", label: "Countries / remote teams" },
   { value: "AI", label: "RAG & LLM integrations" },
   { value: "24/7", label: "High-availability systems" },
 ];
