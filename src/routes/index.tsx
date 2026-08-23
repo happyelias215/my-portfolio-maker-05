@@ -218,17 +218,8 @@ function Index() {
           <p className="label-mono">Bucharest, Romania — available remote</p>
           <h1 className="mt-6 max-w-4xl text-4xl leading-[1.15] md:text-6xl">
             Senior Full Stack Engineer
-            <span className="mt-3 block text-muted-foreground italic">
-              building systems that scale.
-            </span>
           </h1>
           <div className="mt-8 h-px w-24 bg-foreground" aria-hidden="true" />
-          <p className="mt-8 max-w-2xl text-lg leading-relaxed text-muted-foreground">
-            10+ years designing and shipping cloud-native applications, AI-powered platforms and
-            enterprise software — from concept to production. Deep frontend and backend expertise in
-            TypeScript, React, Next.js and Node.js, with REST and GraphQL APIs, optimized databases,
-            and AWS/Docker/CI-CD delivery pipelines.
-          </p>
           <div className="mt-10 flex flex-wrap items-center gap-3">
             <a
               href="mailto:happyelias215@gmail.com"
