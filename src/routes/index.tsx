@@ -173,7 +173,7 @@ const experience = [
 
 const stats = [
   { value: "10+", label: "Years shipping" },
-  { value: "3", label: "Countries / remote teams" },
+  { value: "2+", label: "Countries / remote teams" },
   { value: "AI", label: "RAG & LLM integrations" },
   { value: "24/7", label: "High-availability systems" },
 ];
@@ -215,7 +215,7 @@ function Index() {
       {/* Hero */}
       <section id="top" className="relative overflow-hidden border-b border-border">
         <div className="relative mx-auto max-w-6xl px-6 py-24 md:py-32">
-          <p className="label-mono">Romania · Hungary — available remote</p>
+          <p className="label-mono">Bucharest, Romania — available remote</p>
           <h1 className="mt-6 max-w-4xl text-4xl leading-[1.15] md:text-6xl">
             Senior Full Stack Engineer
             <span className="mt-3 block text-muted-foreground italic">
@@ -237,10 +237,10 @@ function Index() {
               happyelias215@gmail.com
             </a>
             <a
-              href="tel:+3619011020"
+              href="tel:+40770123456"
               className="rounded-sm border border-foreground/25 bg-surface px-6 py-3 font-mono text-xs uppercase tracking-widest text-foreground transition-colors hover:bg-surface-raised"
             >
-              +36 1 901 1020
+              +40 770 123 456
             </a>
           </div>
 
@@ -277,8 +277,8 @@ function Index() {
               Terraform and CI/CD so releases stay fast and predictable.
             </p>
             <p className="text-foreground">
-              English — Advanced / fully working proficiency (C1). Based between Romania and
-              Hungary, working with distributed teams across Europe and the US.
+              English — Advanced / fully working proficiency (C1). Based in Bucharest, Romania,
+              working with distributed teams across Europe and the US.
             </p>
           </div>
         </div>
@@ -391,15 +391,15 @@ function Index() {
               <p className="mt-2 text-sm">happyelias215@gmail.com</p>
             </a>
             <a
-              href="tel:+3619011020"
+              href="tel:+40770123456"
               className="bg-surface px-6 py-6 transition-colors hover:bg-surface-raised"
             >
               <p className="label-mono">Phone</p>
-              <p className="mt-2 text-sm">+36 1 901 1020</p>
+              <p className="mt-2 text-sm">+40 770 123 456</p>
             </a>
             <div className="bg-surface px-6 py-6">
               <p className="label-mono">Location</p>
-              <p className="mt-2 text-sm">Romania · Hungary</p>
+              <p className="mt-2 text-sm">Bucharest, Romania</p>
             </div>
           </div>
           <p className="mt-16 font-mono text-xs text-muted-foreground">
