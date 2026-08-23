@@ -296,6 +296,61 @@ function Index() {
         </div>
       </section>
 
+      {/* Projects */}
+      <section id="projects" className="border-b border-border">
+        <div className="mx-auto max-w-6xl px-6 py-24">
+          <p className="label-mono">01 — Projects</p>
+          <h2 className="mt-4 text-3xl">Selected work</h2>
+          <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted-foreground">
+            Highlights from recent delivery at Addcode (Dortmund) and Info Support (Veenendaal).
+          </p>
+
+          <Carousel className="mt-14 w-full" opts={{ align: "start", loop: true }}>
+            <CarouselContent className="-ml-4">
+              {projects.map((project) => (
+                <CarouselItem key={project.title} className="pl-4 md:basis-1/2">
+                  <article className="panel group h-full overflow-hidden">
+                    <div className="aspect-[3/2] overflow-hidden bg-surface">
+                      <img
+                        src={project.image}
+                        alt={`${project.title} — ${project.company}`}
+                        loading="lazy"
+                        width={1200}
+                        height={800}
+                        className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      />
+                    </div>
+                    <div className="p-6">
+                      <p className="label-mono">
+                        {project.company} · {project.location}
+                      </p>
+                      <h3 className="mt-3 text-xl">{project.title}</h3>
+                      <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                        {project.description}
+                      </p>
+                      <ul className="mt-5 flex flex-wrap gap-2">
+                        {project.stack.map((tech) => (
+                          <li
+                            key={tech}
+                            className="rounded-sm border border-border bg-background px-2.5 py-1 font-mono text-xs text-muted-foreground"
+                          >
+                            {tech}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </article>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <div className="mt-8 flex items-center justify-end gap-2">
+              <CarouselPrevious className="static translate-x-0 translate-y-0" />
+              <CarouselNext className="static translate-x-0 translate-y-0" />
+            </div>
+          </Carousel>
+        </div>
+      </section>
+
       {/* About */}
       <section id="about" className="border-b border-border">
         <div className="mx-auto grid max-w-6xl gap-12 px-6 py-24 md:grid-cols-[220px_1fr]">
