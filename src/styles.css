@@ -53,32 +53,32 @@
 
 :root {
   --radius: 0.25rem;
-  --background: oklch(0.968 0.006 85);
-  --foreground: oklch(0.16 0.003 60);
-  --card: oklch(0.985 0.004 85);
-  --card-foreground: oklch(0.16 0.003 60);
-  --surface: oklch(0.985 0.004 85);
-  --surface-raised: oklch(0.94 0.007 85);
-  --popover: oklch(0.985 0.004 85);
-  --popover-foreground: oklch(0.16 0.003 60);
-  --primary: oklch(0.16 0.003 60);
-  --primary-foreground: oklch(0.978 0.005 85);
-  --secondary: oklch(0.925 0.008 85);
-  --secondary-foreground: oklch(0.2 0.004 60);
-  --muted: oklch(0.93 0.007 85);
-  --muted-foreground: oklch(0.44 0.006 65);
-  --accent: oklch(0.925 0.008 85);
-  --accent-foreground: oklch(0.2 0.004 60);
-  --destructive: oklch(0.52 0.19 26);
+  --background: oklch(0.18 0.008 260);
+  --foreground: oklch(0.96 0.004 85);
+  --card: oklch(0.22 0.01 260);
+  --card-foreground: oklch(0.96 0.004 85);
+  --surface: oklch(0.22 0.01 260);
+  --surface-raised: oklch(0.28 0.012 260);
+  --popover: oklch(0.22 0.01 260);
+  --popover-foreground: oklch(0.96 0.004 85);
+  --primary: oklch(0.96 0.004 85);
+  --primary-foreground: oklch(0.14 0.008 260);
+  --secondary: oklch(0.28 0.012 260);
+  --secondary-foreground: oklch(0.92 0.006 85);
+  --muted: oklch(0.3 0.012 260);
+  --muted-foreground: oklch(0.68 0.01 75);
+  --accent: oklch(0.28 0.012 260);
+  --accent-foreground: oklch(0.92 0.006 85);
+  --destructive: oklch(0.62 0.18 26);
   --destructive-foreground: oklch(0.98 0.004 85);
-  --border: oklch(0.86 0.008 85);
-  --input: oklch(0.86 0.008 85);
-  --ring: oklch(0.3 0.005 60);
-  --chart-1: oklch(0.16 0.003 60);
-  --chart-2: oklch(0.44 0.006 65);
-  --chart-3: oklch(0.6 0.008 70);
-  --chart-4: oklch(0.72 0.008 80);
-  --chart-5: oklch(0.86 0.008 85);
+  --border: oklch(0.32 0.012 260);
+  --input: oklch(0.32 0.012 260);
+  --ring: oklch(0.6 0.008 85);
+  --chart-1: oklch(0.96 0.004 85);
+  --chart-2: oklch(0.78 0.01 75);
+  --chart-3: oklch(0.62 0.012 70);
+  --chart-4: oklch(0.48 0.012 65);
+  --chart-5: oklch(0.36 0.012 60);
 }
 
 @layer base {
