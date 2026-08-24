@@ -18,11 +18,11 @@ concurrency:
 
 jobs:
   deploy:
+    runs-on: ubuntu-latest
+
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-
-    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout
@@ -37,22 +37,18 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build project
-        run: |
-          npm run build
-          echo "=== Build output ==="
-          find . -maxdepth 3 -type d | sort
-          
-      - name: Check build output
-        run: |
-          echo "=== .output/public contents ==="
-          ls -la .output/public || true
+      - name: Build and prerender
+        run: npm run build
 
-          echo "=== All files in .output/public ==="
-          find .output/public -type f | sort || true
-
+      - name: Verify static output
+        run: |
           echo "=== Looking for index.html ==="
-          find . -name "index.html" -type f   
+          find .output/public -name "index.html" -type f -print
+
+          echo "=== Output ==="
+          find .output/public -maxdepth 2 -type f | sort
+
+          test -f .output/public/index.html
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
