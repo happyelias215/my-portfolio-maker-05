@@ -259,7 +259,7 @@ function Index() {
             ))}
           </nav>
           <a
-            href="mailto:happyelias215@gmail.com"
+            href="#education"
             className="rounded-sm bg-primary px-4 py-2 font-mono text-xs uppercase tracking-widest text-primary-foreground transition-opacity hover:opacity-90"
           >
             Contact
@@ -285,7 +285,7 @@ function Index() {
               href="tel:+40770123456"
               className="rounded-sm border border-foreground/25 bg-surface px-6 py-3 font-mono text-xs uppercase tracking-widest text-foreground transition-colors hover:bg-surface-raised"
             >
-              +40 770 123 456
+              +40 728 356 708
             </a>
           </div>
 
@@ -479,7 +479,7 @@ function Index() {
       <footer className="relative">
         <div className="relative mx-auto max-w-6xl border-t border-border px-6 py-24">
           <p className="label-mono">05 — Contact</p>
-          <h2 className="mt-4 max-w-2xl text-4xl md:text-5xl">
+          <h2 className="mt-6 max-w-4xl text-4xl leading-[1.15] md:text-5xl">
             Let&rsquo;s build something durable.
           </h2>
           <div className="mt-10 grid gap-px overflow-hidden border border-border bg-border sm:grid-cols-3">
@@ -495,7 +495,7 @@ function Index() {
               className="bg-surface px-6 py-6 transition-colors hover:bg-surface-raised"
             >
               <p className="label-mono">Phone</p>
-              <p className="mt-2 text-sm">+40 770 123 456</p>
+              <p className="mt-2 text-sm">+40 728 356 708</p>
             </a>
             <div className="bg-surface px-6 py-6">
               <p className="label-mono">Location</p>
