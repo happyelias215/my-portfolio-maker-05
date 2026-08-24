@@ -42,6 +42,17 @@ jobs:
           npm run build
           echo "=== Build output ==="
           find . -maxdepth 3 -type d | sort
+          
+      - name: Check build output
+        run: |
+          echo "=== .output/public contents ==="
+          ls -la .output/public || true
+
+          echo "=== All files in .output/public ==="
+          find .output/public -type f | sort || true
+
+          echo "=== Looking for index.html ==="
+          find . -name "index.html" -type f   
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
